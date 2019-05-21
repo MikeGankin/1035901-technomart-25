@@ -13,7 +13,10 @@
         <a href="#"><img src="img/index-logo.png" width="220px" height="47px" alt="Логотип Техномарт"></a>
       </div>
       <div class="search-form">
-        <!--Тут будет форма поиска-->
+        <p>
+          <label for="your-name">Поиск</label>
+          <input id="your-name" type="text" name="name" placeholder="Поиск">
+        </p>
       </div>
       <ul class="order-interface">
         <li class="bookmarks"><a href="#">Закладки:0</a></li>
@@ -23,7 +26,7 @@
     </div>
     <div class="header-middle-wrapper">
       <h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
-      <div class="address">
+      <div class="header-contacts">
         <b>+7 (812) 555-05-55</b>
         <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
       </div>
@@ -70,8 +73,8 @@
       <ul class="catalog-list">
         <li class="catalog-item">
           <figure class="galery-content">
-           <h2>Дрели всем на радость</h2>
-           <a href="#"><img src="img/drill-baner.jpg" alt="Элемент каталога 1"></a>
+            <h2>Дрели всем на радость</h2>
+            <a href="#"><img src="img/drill-baner.jpg" alt="Элемент каталога 1"></a>
           </figure>
           <button class="galery-button-forward" type="button">Вперед</button>
           <button class="galery-button-backward" type="button">Назад</button>
@@ -86,8 +89,10 @@
       </div>
       <ul class="popular-goods-list">
         <li class="product-goods-item">
-          <img src="img/Perforator_1.jpg" alt="Картинка перфоратора">
-          <a href="#"><h3 class="product-name">Перфоратор Bosch bfg 9000</h3></a>
+          <img src="img/perforator_1.jpg" alt="Картинка перфоратора">
+          <a href="#">
+            <h3 class="product-name">Перфоратор Bosch bfg 9000</h3>
+          </a>
           <p class="old price">32500 Р.</p>
           <p><a href="#">25500 Р.</a></p>
           <div class="add product">
@@ -96,8 +101,10 @@
           </div>
         </li>
         <li class="product-goods-item">
-          <img src="img/Perforator_2.jpg" alt="Картинка перфоратора">
-          <a href="#"><h3 class="product-name">Перфоратор Bosch bfg 3000</h3></a>
+          <img src="img/perforator_2.jpg" alt="Картинка перфоратора">
+          <a href="#">
+            <h3 class="product-name">Перфоратор Bosch bfg 3000</h3>
+          </a>
           <p class="old price">22500 Р.</p>
           <p><a href="#">15500 Р.</a></p>
           <div class="add product">
@@ -106,8 +113,10 @@
           </div>
         </li>
         <li class="product-goods-item">
-          <img src="img/Perforator_3.jpg" alt="Картинка перфоратора">
-          <a href="#"><h3 class="product-name">Перфоратор Bosch bfg 6000</h3></a>
+          <img src="img/perforator_3.jpg" alt="Картинка перфоратора">
+          <a href="#">
+            <h3 class="product-name">Перфоратор Bosch bfg 6000</h3>
+          </a>
           <p class="old price">30500 Р.</p>
           <p><a href="#">22500 Р.</a></p>
           <div class="add product">
@@ -116,8 +125,10 @@
           </div>
         </li>
         <li class="product-goods-item">
-          <img src="img/Perforator_4.jpg" alt="Картинка перфоратора">
-          <a href="#"><h3 class="product-name">Перфоратор Bosch bfg 2000</h3></a>
+          <img src="img/perforator_4.jpg" alt="Картинка перфоратора">
+          <a href="#">
+            <h3 class="product-name">Перфоратор Bosch bfg 2000</h3>
+          </a>
           <p><a href="#">12500 Р.</a></p>
           <div class="add product">
             <p><a href="#">Купить</a></p>
@@ -133,13 +144,13 @@
       </div>
       <ul class="popular-producers-list">
         <li class="popular-producers-items"><a href="#"><img src="img/bosch.png" alt="BOSCH"></a></li>
-        <li class="popular-producers-items"><a href="#"><img src="img/Makita.png" alt="makita"></a></li>
-        <li class="popular-producers-items"><a href="#"><img src="img/DeWALT.png" alt="dewalt"></a></li>
-        <li class="popular-producers-items"><a href="#"><img src="img/Интерскол.png" alt="интерскол"></a></li>
-        <li class="popular-producers-items"><a href="#"><img src="img/Hitachi.png" alt="hitachi"></a></li>
+        <li class="popular-producers-items"><a href="#"><img src="img/makita.png" alt="makita"></a></li>
+        <li class="popular-producers-items"><a href="#"><img src="img/dewalt.png" alt="dewalt"></a></li>
+        <li class="popular-producers-items"><a href="#"><img src="img/interskol.png" alt="интерскол"></a></li>
+        <li class="popular-producers-items"><a href="#"><img src="img/hitachi.png" alt="hitachi"></a></li>
         <li class="popular-producers-items"><a href="#"><img src="img/lg.png" alt="LG"></a></li>
-        <li class="popular-producers-items"><a href="#"><img src="img/AEG.png" alt="AEG"></a></li>
-        <li class="popular-producers-items"><a href="#"><img src="img/Metabo.png" alt="metabo"></a></li>
+        <li class="popular-producers-items"><a href="#"><img src="img/aeg.png" alt="AEG"></a></li>
+        <li class="popular-producers-items"><a href="#"><img src="img/metabo.png" alt="metabo"></a></li>
       </ul>
     </section>
     <section>
@@ -183,6 +194,23 @@
         <img src="img/map.png" alt="Место расположения">
         <a href="#">Заблудились? Напишите нам!</a>
       </div>
+      <div class="contacts-popup">
+        <form class="user" method="post" action="https://echo.htmlacademy.ru">
+          <p>
+            <label for="your-name">Ваше имя</label>
+            <input id="your-name" type="text" name="name" placeholder="Имя фамилия">
+          </p>
+          <p>
+            <label for="your-email">Ваш e-mail</label>
+            <input id="your-email" type="email" name="email" placeholder="email@example.ru">
+          </p>
+          <p>
+            <label for="text">Текст письма:</label>
+            <input id="text" type="text" name="next" placeholder="В свободной форме">
+          </p>
+          <button type="submit">Отправить</button>
+        </form>
+      </div>
     </section>
   </main>
 
@@ -197,7 +225,7 @@
         <li class="footer-navigation-item"><a href="#">Контакты</a></li>
       </ul>
     </div>
-    <div class="address">
+    <div class="footer-contacts">
       <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 +7 (812) 555-05-55</p>
       <ul class="footer-category-list">
         <li class="footer-category-item"><a href="#">Материалы</a></li>
