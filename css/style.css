@@ -33,15 +33,23 @@ img {
   margin-bottom: -5px
 }
 
-.header-logo a {
-  display: block;
+.main-logo {
   width: 220px;
   height: 47px;
+  box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
   background-color: #ee3643;
-  background-image: url(../img/index-logo.png);
-  background-repeat: no-repeat;
-  background-position: 50%, 50%;
-  box-shadow: inset 0 -5px 0 0 rgba(0, 0, 0, .24)
+  fill: #fff;
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-logo a {
+  width: 220px;
+  height: 47px;
 }
 
 .visually-hidden {
@@ -57,11 +65,11 @@ img {
   clip-path: inset(100%)
 }
 
-.header-logo a:hover {
+.header-logo a:hover .main-logo {
   background-color: #ca2c37
 }
 
-.header-logo a:active {
+.header-logo a:active .main-logo {
   background-color: #ba2732
 }
 
@@ -276,11 +284,8 @@ img {
 .login-icon {
   position: absolute;
   top: 17px;
-  left: 14px
-}
-
-.login-icon:focus, .login-icon:hover {
-  fill: #293449
+  left: 14px;
+  fill: #c5c5c5;
 }
 
 .login {
@@ -288,6 +293,10 @@ img {
   display: block;
   margin-right: 10px;
   padding: 16px 27px 16px 48px
+}
+
+.login:hover .login-icon {
+  fill: #293449
 }
 
 .registration a {
@@ -349,13 +358,8 @@ img {
 .logo {
   width: 220px;
   height: 68px;
-  margin-right: 113px;
-  margin-bottom: 32px;
   background-color: #ee3643;
-  background-image: url(../img/footer-logo.png);
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  box-shadow: inset 0 -5px 0 0 rgba(0, 0, 0, .24)
+  box-shadow: inset 0 -5px 0 0 rgba(0, 0, 0, .24);
 }
 
 .footer-contacts, .footer-logo, .footer-navigation-list {
@@ -374,7 +378,8 @@ img {
   list-style: none;
 }
 
-.footer-category-item a, .footer-navigation-item a {
+.footer-category-item,
+.footer-navigation-item {
   display: block;
   margin: 0;
   padding-left: 60px;
@@ -545,10 +550,6 @@ img {
 }
 
 .about-us, .contacts {
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-  justify-content: space-between;
   height: 438px;
   margin-bottom: 86px
 }
@@ -559,12 +560,12 @@ img {
 }
 
 .contacts {
-  width: 300px
+  width: 300px;
 }
 
 .contacts-label {
   margin-top: 0;
-  margin-bottom: 3px
+  margin-bottom: 39px
 }
 
 .about-us-label, .contacts-label {
@@ -666,11 +667,16 @@ img {
 }
 
 .write-us-link {
-  width: 300px
+  width: 300px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 63px;
+  padding-right: 59px;
 }
 
 .map {
-  margin-bottom: 40px
+  margin-bottom: 77px;
+  margin-top: 36px;
 }
 
 .modal-contacts-popup {
@@ -873,15 +879,13 @@ img {
 }
 
 .big-map {
-  margin: 0;
-  padding: 0;
-  display: block;
+  box-shadow: 0 0 14.7px 1.3px rgba(47, 42, 43, 0.5);
 }
 
 .map-close {
   position: absolute;
-  top: 30px;
-  right: 30px;
+  top: 9px;
+  right: 9px;
   width: 21px;
   height: 21px;
   cursor: pointer;
@@ -911,3 +915,10 @@ img {
 .modal-close {
   background: transparent;
 }
+
+.logo {
+  width: 220px;
+  height: 68px;
+  box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
+  background-color: #ee3643;
+  fill: #fff;
