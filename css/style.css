@@ -108,6 +108,7 @@ img {
 
 .form::placeholder {
   color: #fff;
+  opacity: 1;
 }
 
 .search-button {
@@ -125,10 +126,6 @@ img {
 
 .search-button svg {
   fill: rgba(255, 255, 255, 0.3);
-}
-
-.search-button svg:hover {
-  fill: rgba(255, 255, 255);
 }
 
 .order-interface {
