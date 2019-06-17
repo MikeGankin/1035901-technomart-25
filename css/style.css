@@ -15,6 +15,7 @@ img {
 }
 /* @end global */
 
+/* @group index */
 /* @group visually-hidden */
 .visually-hidden {
   position: absolute;
@@ -155,7 +156,7 @@ img {
 }
 
 .bookmarks,
-.cart,
+.chart,
 .order-button {
   position: relative;
 }
@@ -171,7 +172,8 @@ img {
   background-image: url("../img/icon-bookmark.svg");
 }
 
-.cart::before {
+.chart::before,
+.active-chart::before {
   content: "";
   position: absolute;
   top: 14px;
@@ -188,18 +190,18 @@ img {
   padding: 14px 28px 13px 44px;
 }
 
-.cart a {
+.chart a {
   margin: 0;
   padding: 14px 31px 13px 50px;
 }
 
 .bookmarks a:hover,
-.cart a:hover {
+.chart a:hover {
   background-color: #212a3a;
 }
 
 .bookmarks a:active,
-.cart a:active {
+.chart a:active {
   opacity: 0.6;
   background-color: #161d29;
 }
@@ -1812,3 +1814,180 @@ img {
   background: transparent;
 }
 /* @end modal popups */
+/* @end index */
+
+
+/* @group catalog header */
+.active-chart {
+  background-color: rgb(238, 54, 67);
+  position: relative;
+}
+
+.active-chart a {
+  margin: 0;
+  padding: 14px 31px 13px 50px;
+}
+
+.cabinet a {
+  margin: 0;
+}
+
+.catalog-user-navigation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0;
+  padding-left: 51px;
+  width: 299px;
+  box-sizing: border-box;
+}
+
+.login-link.cabinet {
+  position: relative;
+  display: inline-block;
+  background-color: white;
+}
+
+.login-link.cabinet a {
+  font-size: 21px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+  color: rgb(0, 0, 0);
+}
+
+.cabinet-menu-item a,
+.my-orders a {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.13;
+  letter-spacing: normal;
+  text-align: left;
+  color: rgb(50, 66, 92);
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.my-orders {
+  list-style: none;
+  padding-right: 10px;
+}
+/* @end catalog header */
+
+
+.breadcrumbs-list {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  position: relative;
+}
+
+.breadcrumbs-list a {
+  display: inline-block;
+  padding-right: 39px;
+  padding-left: 39px;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  text-align: left;
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+}
+
+.catalog-link a::before {
+  content: "";
+  position: absolute;
+  background-color: red;
+  width: 14px;
+  height: 12px;
+  top: 3px;
+  left: 0px;
+  background-image: url("img/icon-home.svg");
+}
+
+.catalog-label {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left:auto;
+  margin-bottom: 20px;
+  padding: 0;
+  background-color: rgb(242, 246, 248);
+}
+
+.catalog-label h2 {
+  font-size: 30px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+  color: rgb(50, 66, 92);
+  text-transform: uppercase;
+  padding-left: 30px;
+}
+
+.main-section {
+  display: flex;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.sort,
+.sort-parametres-list {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.sort {
+  width: 700px;
+}
+
+.about-drill {
+ background-color: rgb(242, 246, 248);
+ margin: 0;
+}
+
+.about-drill h2 {
+  line-height: 1;
+  font-size: 30px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  padding-top: 67px;
+  padding-left: 170px;
+  padding-bottom: 39px;
+}
+
+.about-drill p {
+  font-size: 13px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.85;
+  letter-spacing: normal;
+  text-align: left;
+  color: rgb(0, 0, 0);
+  padding-left: 170px;
+  padding-bottom: 73px;
+  padding-right: 170px;
+}
