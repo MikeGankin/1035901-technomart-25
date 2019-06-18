@@ -260,7 +260,7 @@ img {
 .phone,
 .place {
   letter-spacing: normal;
-
+  flex-shrink: 1;
   font-weight: 400;
   font-style: normal;
   font-stretch: normal;
@@ -770,10 +770,6 @@ img {
   background-image: url("../img/new-flag.png");
 }
 
-.catalog-item:not(:nth-child(4n)) {
-  margin-right: 20px;
-}
-
 .catalog-item:hover {
   box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
 }
@@ -947,23 +943,21 @@ img {
   margin-bottom: 20px;
   padding: 0;
 
+
   border: solid 1px rgb(234, 234, 234);
   background-color: rgb(255, 255, 255);
 }
 
 .popular-producers-items a {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   box-sizing: border-box;
   width: 220px;
   height: 145px;
 }
 
-.popular-producers-items img {
-  display: block;
-
-  margin: auto;
-}
 /* @end section three */
 
 
@@ -1840,7 +1834,6 @@ img {
   margin: 0;
   padding-left: 51px;
   width: 299px;
-  box-sizing: border-box;
 }
 
 .login-link.cabinet {
@@ -1890,6 +1883,7 @@ img {
   padding: 0;
   margin: 0 auto;
   position: relative;
+  margin-bottom: 25px;
 }
 
 .breadcrumbs-list a {
@@ -1943,19 +1937,71 @@ img {
 
 .main-section {
   display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
   padding: 0;
   margin: 0 auto;
 }
 
+.catalog-charts,
+.catalog-items,
 .sort,
-.sort-parametres-list {
+.sort-parametres-list,
+.product-list,
+.pagination {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
 }
 
 .sort {
   width: 700px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.sort-parametres-list {
+  list-style: none;
+}
+
+.sort-parametres-list a {
+  padding-right: 44px;
+  display: inline-block;
+  padding-top: 7px;
+}
+
+.sort-label {
+  margin: 0;
+  padding-right: 139px;
+}
+
+.filter {
+  width: 220px;
+  margin-right: 21px;
+}
+
+.pagination {
+  width: 284px;
+  margin-right: 10px;
+  list-style: none;
+}
+
+.pagination a {
+  display: inline-block;
+  padding: 15px 17px 15px 17px;
+  background-color: red;
+  border-radius: 3px;
+  color: white;
+}
+
+.show-button {
+  width: 140px;
+  border: solid 1px rgb(229, 229, 229);
+  background-color: rgb(255, 255, 255);
+  display: inline-block;
 }
 
 .about-drill {
@@ -1990,4 +2036,91 @@ img {
   padding-left: 170px;
   padding-bottom: 73px;
   padding-right: 170px;
+}
+
+.modal-shoping-chart-popup {
+  width: 620px;
+  height: 282px;
+  box-shadow: 0px 20px 40px 0 rgba(41, 52, 73, 0.75);
+  box-sizing: border-box;
+  position: relative;
+}
+
+.modal-shoping-chart-popup::after {
+  content: "";
+  position: absolute;
+  width: 620px;
+  height: 7px;
+  top: 0;
+  right: 0;
+  background-color: rgb(238, 54, 67);
+}
+
+.write-us {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.modal-buttons {
+  width: 620px;
+  height: 112px;
+  background-color: rgb(241, 241, 241);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-buttons-container {
+  width: 460px;
+}
+
+.modal-buttons a {
+  display: inline-block;
+  background-color: rgb(238, 54, 67);
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 59px;
+  padding-right: 62px;
+  color: white;
+  border-radius: 3px;
+  margin-right: 9px;
+}
+
+.continue-button {
+  display: inline-block;
+  background-color: white;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 48px;
+  padding-right: 44px;
+  color: black;
+  border: none;
+}
+
+.modal-shoping-chart-popup p {
+  text-align: center;
+  margin: 0;
+  padding-top: 75px;
+  padding-left: 98px;
+  padding-bottom: 68px;
+  font-size: 31.5px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  position: relative;
+}
+
+.popup-title::before {
+  content: "";
+  position: absolute;
+  width: 66px;
+  height: 66px;
+  top: 55px;
+  left: 81px;
+  background-image: url("../img/icon-mark.svg");
 }
