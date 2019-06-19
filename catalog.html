@@ -82,44 +82,65 @@
     <section class="main-section container">
       <div class="filter">
         <h2>Фильтр</h2>
-        <p>Цена</p>
+        <p>Цена:</p>
         <form class="prise-range-slider" action="https://echo.htmlacademy.ru" method="post">
           <div class="value">
-            <input type="number" name="min-range" value="0">
-            <input type="number" name="max-range" value="30000">
+            <input class="min-range" type="number" name="min-range" value="0">
+            <input class="max-range" type="number" name="max-range" value="30000">
           </div>
+          <p>Производители:</p>
           <ul class="produsers-selection-list">
-            <li><p>Производители</p></li>
             <li class="produsers-selection-item">
-              <input class="checkbox" type="checkbox" id="box-1">
-              <label class="checkbox-label" for="box-1">Bosch</label>
+              <label class="check option">
+              		<input class="check-input visually-hidden" type="checkbox">
+              		<span class="check-box"></span>
+              		Bosch
+              </label>
             </li>
             <li class="produsers-selection-item">
-              <input class="checkbox" type="checkbox" id="box-2">
-              <label class="checkbox-label" for="box-2">Интерскол</label>
+              <label class="check option">
+              		<input class="check-input visually-hidden" type="checkbox">
+              		<span class="check-box"></span>
+              		Интерскол
+              </label>
             </li>
             <li class="produsers-selection-item">
-              <input class="checkbox" type="checkbox" id="box-3">
-              <label class="checkbox-label" for="box-3">Makita</label>
+              <label class="check option">
+              		<input class="check-input visually-hidden" type="checkbox">
+              		<span class="check-box"></span>
+              		Makita
+              </label>
             </li>
             <li class="produsers-selection-item">
-              <input class="checkbox" type="checkbox" id="box-4">
-              <label class="checkbox-label" for="box-4">Dewalt</label>
+              <label class="check option">
+              		<input class="check-input visually-hidden" type="checkbox">
+              		<span class="check-box"></span>
+              		Dewalt
+              </label>
             </li>
             <li class="produsers-selection-item">
-              <input class="checkbox" type="checkbox" id="box-5">
-              <label class="checkbox-label" for="box-5">Hitachi</label>
+              <label class="check option">
+              		<input class="check-input visually-hidden" type="checkbox">
+              		<span class="check-box"></span>
+              		Hitachi
+              </label>
             </li>
           </ul>
+          <p>Питание:</p>
           <ul class="power-choice-list">
-            <li><p>Питание</p></li>
             <li class="power-choice-item">
-              <input class="checkbox" type="radio" id="radio-1" name="drill-type">
-              <label class="radio-label" for="radio-1">Акумуляторные</label>
+              <label class="radio option">
+              		<input class="radio-input visually-hidden" type="radio" name="response">
+              		<span class="radio-button"></span>
+              		Акумуляторные
+              </label>
             </li>
             <li class="power-choice-item">
-              <input class="checkbox" type="radio" id="radio-2" name="drill-type">
-              <label class="radio-label" for="radio-2">Сетевые</label>
+              <label class="radio option">
+              		<input class="radio-input visually-hidden" type="radio" name="response">
+              		<span class="radio-button"></span>
+              		Сетевые
+              </label>
             </li>
           </ul>
           <button class="show-button" type="submit">Показать</button>
@@ -127,7 +148,7 @@
       </div>
       <div class="catalog-charts">
         <div class="sort">
-          <h2 class="sort-label">Сортировка</h2>
+          <h2 class="sort-label">Сортировка:</h2>
           <ul class="sort-parametres-list">
             <li class="sort-parametres-item"><a href="#">По цене</a></li>
             <li class="sort-parametres-item"><a href="#">По типу</a></li>
