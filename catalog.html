@@ -46,13 +46,13 @@
           <p class="place">г. Санкт-Петербург, ул. Б. Конюшенная д. 19/8</p>
         </address>
         <ul class="catalog-user-navigation">
-          <li class="login-link cabinet"><a class="login" href="login.html">Равшан Джамшутович
-              <svg class="login-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17">
-                <path d="M14.875 8.5L6 0v6H0v5h6v6z" />
-                <path d="M16.986 15.01h-5.027V17h5.027c2.178 0 3.004-1.81 3.029-3.026V3.028C19.99 1.811 19.164 0 16.986 0h-5.027v1.99h5.027c.839 0 .992.681 1.01 1.057v10.904c-.017.376-.171 1.059-1.01 1.059z" /></svg>
+          <li class="user-link-cabinet">
+            <a class="user" href="#">Равшан Джамшутович
+              <svg class="user-icon"xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18"><path d="M17.881 14.166c-2.144-.735-4.256-1.666-5.207-2.39-.657-.501-.77-1.618-.517-2.415 1.118-.903 1.864-2.477 1.864-4.278C14.021 2.276 12.221 0 10 0S5.979 2.276 5.979 5.083c0 1.801.746 3.374 1.863 4.277.253.798.141 1.915-.517 2.416-.95.724-3.063 1.654-5.207 2.39S0 18 0 18h20s.025-3.099-2.119-3.834z"/></svg>
+              <svg class="log-out-icon"xmlns="http://www.w3.org/2000/svg" width="21" height="17" viewBox="0 0 21 17"><path d="M21 8.5L12.125 0v6h-6v5h6v6z"/><path d="M3.106 13.952V3.048c.018-.376.171-1.057 1.01-1.057h5.027V0H4.116C1.938 0 1.112 1.81 1.087 3.027v10.946C1.112 15.189 1.938 17 4.116 17h5.027v-1.99H4.116c-.839 0-.992-.683-1.01-1.058z"/></g></svg>
             </a>
           </li>
-          <li class="my-orders"><a class="my-orders" href="#">Мои заказы</a></li>
+          <li class="my-orders"><a class="my-orders-link" href="#">Мои заказы</a></li>
           <li class="cabinet-menu-item"><a href="#">Личный кабинет</a></li>
         </ul>
       </div>
@@ -83,7 +83,10 @@
       <div class="filter">
         <h2>Фильтр</h2>
         <p>Цена:</p>
-        <form class="prise-range-slider" action="https://echo.htmlacademy.ru" method="post">
+        <form class="filter-form" action="https://echo.htmlacademy.ru" method="post">
+          <div class="slidecontainer">
+            <input type="range" min="1" max="30000" class="slider" id="myRange">
+          </div>
           <div class="value">
             <input class="min-range" type="number" name="min-range" value="0">
             <input class="max-range" type="number" name="max-range" value="30000">
@@ -91,56 +94,35 @@
           <p>Производители:</p>
           <ul class="produsers-selection-list">
             <li class="produsers-selection-item">
-              <label class="check option">
-              		<input class="check-input visually-hidden" type="checkbox">
-              		<span class="check-box"></span>
-              		Bosch
-              </label>
+              <input class="checkbox visually-hidden" type="checkbox" id="check-1">
+              <label class="checkbox-label" for="check-1">Bosch</label>
             </li>
             <li class="produsers-selection-item">
-              <label class="check option">
-              		<input class="check-input visually-hidden" type="checkbox">
-              		<span class="check-box"></span>
-              		Интерскол
-              </label>
+              <input class="checkbox visually-hidden" type="checkbox" id="check-2">
+              <label class="checkbox-label" for="check-2">Интерскол</label>
             </li>
             <li class="produsers-selection-item">
-              <label class="check option">
-              		<input class="check-input visually-hidden" type="checkbox">
-              		<span class="check-box"></span>
-              		Makita
-              </label>
+              <input class="checkbox visually-hidden" type="checkbox" id="check-3">
+              <label class="checkbox-label" for="check-3">Makita</label>
             </li>
             <li class="produsers-selection-item">
-              <label class="check option">
-              		<input class="check-input visually-hidden" type="checkbox">
-              		<span class="check-box"></span>
-              		Dewalt
-              </label>
+              <input class="checkbox visually-hidden" type="checkbox" id="check-4">
+              <label class="checkbox-label" for="check-4">Dewalt</label>
             </li>
             <li class="produsers-selection-item">
-              <label class="check option">
-              		<input class="check-input visually-hidden" type="checkbox">
-              		<span class="check-box"></span>
-              		Hitachi
-              </label>
+              <input class="checkbox visually-hidden" type="checkbox" id="check-5">
+              <label class="checkbox-label" for="check-5">Hitachi</label>
             </li>
           </ul>
           <p>Питание:</p>
           <ul class="power-choice-list">
             <li class="power-choice-item">
-              <label class="radio option">
-              		<input class="radio-input visually-hidden" type="radio" name="response">
-              		<span class="radio-button"></span>
-              		Акумуляторные
-              </label>
+              <input class="radio visually-hidden" type="radio" name="radio" id="radio-1">
+              <label class="radio-label" for="radio-1">Акумуляторные</label>
             </li>
             <li class="power-choice-item">
-              <label class="radio option">
-              		<input class="radio-input visually-hidden" type="radio" name="response">
-              		<span class="radio-button"></span>
-              		Сетевые
-              </label>
+              <input class="radio visually-hidden" type="radio" name="radio" id="radio-2">
+              <label class="radio-label" for="radio-2">Сетевые</label>
             </li>
           </ul>
           <button class="show-button" type="submit">Показать</button>
@@ -150,15 +132,23 @@
         <div class="sort">
           <h2 class="sort-label">Сортировка:</h2>
           <ul class="sort-parametres-list">
-            <li class="sort-parametres-item"><a href="#">По цене</a></li>
-            <li class="sort-parametres-item"><a href="#">По типу</a></li>
-            <li class="sort-parametres-item"><a href="#">По функционалу</a></li>
-            <li class="sort-parametres-item"><a href="#">@</a></li>
-            <li class="sort-parametres-item"><a href="#">@</a></li>
+            <li class="sort-parametres-item-price"><a href="#">По цене</a></li>
+            <li class="sort-parametres-item-type"><a href="#">По типу</a></li>
+            <li class="sort-parametres-item-function"><a href="#">По функционалу</a></li>
+            <li class="sort-parametres-item-up">
+              <a href="#" label="">
+                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path d="M5.5 0L0 10h11z"/></svg>
+              </a>
+            </li>
+            <li class="sort-parametres-item-down">
+              <a href="#" label="">
+                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path d="M5.5 10L0 0h11"/></svg>
+              </a>
+            </li>
           </ul>
         </div>
         <ul class="catalog-items">
-          <li class="catalog-item">
+          <li class="catalog-item card">
             <div class="actions">
               <p><a class="buy" href="#">Купить</a></p>
               <p><a class="bookmark" href="#">В закладки</a></p>
@@ -170,7 +160,7 @@
             <p class="discount">22 500 Р.</p>
             <p class="price"><a href="#">15500 Р.</a></p>
           </li>
-          <li class="catalog-item">
+          <li class="catalog-item card">
             <div class="actions">
               <p><a class="buy" href="#">Купить</a></p>
               <p><a class="bookmark" href="#">В закладки</a></p>
@@ -182,7 +172,7 @@
             <p class="discount">30 500 Р.</p>
             <p class="price"><a href="#">22500 Р.</a></p>
           </li>
-          <li class="catalog-item">
+          <li class="catalog-item card">
             <div class="actions">
               <p><a class="buy" href="#">Купить</a></p>
               <p><a class="bookmark" href="#">В закладки</a></p>
@@ -194,7 +184,7 @@
             <p class="discount">22 500 Р.</p>
             <p class="price"><a href="#">15500 Р.</a></p>
           </li>
-          <li class="catalog-item">
+          <li class="catalog-item card">
             <div class="actions">
               <p><a class="buy" href="#">Купить</a></p>
               <p><a class="bookmark" href="#">В закладки</a></p>
@@ -206,7 +196,7 @@
             <p class="discount"></p>
             <p class="price"><a href="#">12500 Р.</a></p>
           </li>
-          <li class="catalog-item">
+          <li class="catalog-item card">
             <div class="actions">
               <p><a class="buy" href="#">Купить</a></p>
               <p><a class="bookmark" href="#">В закладки</a></p>
@@ -218,7 +208,7 @@
             <p class="discount">32 500 Р.</p>
             <p class="price"><a href="#">22500 Р.</a></p>
           </li>
-          <li class="catalog-item">
+          <li class="catalog-item card">
             <div class="actions">
               <p><a class="buy" href="#">Купить</a></p>
               <p><a class="bookmark" href="#">В закладки</a></p>
@@ -230,7 +220,7 @@
             <p class="discount">22 500 Р.</p>
             <p class="price"><a href="#">15500 Р.</a></p>
           </li>
-          <li class="catalog-item">
+          <li class="catalog-item card">
             <div class="actions">
               <p><a class="buy" href="#">Купить</a></p>
               <p><a class="bookmark" href="#">В закладки</a></p>
@@ -242,7 +232,7 @@
             <p class="discount">30 500 Р.</p>
             <p class="price"><a href="#">22500 Р.</a></p>
           </li>
-          <li class="catalog-item">
+          <li class="catalog-item card">
             <div class="actions">
               <p><a class="buy" href="#">Купить</a></p>
               <p><a class="bookmark" href="#">В закладки</a></p>
@@ -254,7 +244,7 @@
             <p class="discount">22 500 Р.</p>
             <p class="price"><a href="#">15500 Р.</a></p>
           </li>
-          <li class="catalog-item">
+          <li class="catalog-item card">
             <div class="actions">
               <p><a class="buy" href="#">Купить</a></p>
               <p><a class="bookmark" href="#">В закладки</a></p>
@@ -268,10 +258,10 @@
           </li>
         </ul>
         <ul class="pagination">
-          <li class="catalog-navigation-item"><a href="#">1</a></li>
-          <li class="catalog-navigation-item"><a href="#">2</a></li>
-          <li class="catalog-navigation-item"><a href="#">3</a></li>
-          <li class="next-button"><a href="#">Следующая</a></li>
+          <li class="pagination-item-active"><a class="pagination-link-active" href="#">1</a></li>
+          <li class="pagination-item"><a class="pagination-link" href="#">2</a></li>
+          <li class="pagination-item"><a class="pagination-link" href="#">3</a></li>
+          <li class="next-button"><a class="next-link" href="#">Следующая</a></li>
         </ul>
       </div>
     </section>
@@ -354,6 +344,7 @@
       <div class="modal-buttons-container">
         <a href="#">Оформить заказ</a>
         <button class="continue-button" type="button">Продолжить покупки</button>
+        <button class="modal-close" type="button" name="button"></button>
       </div>
 
 
