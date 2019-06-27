@@ -1469,7 +1469,7 @@ line-height: 1;
 /* @end footer third line */
 /* @group modal popups */
 .modal-contacts-popup {
-  position: relative;
+  position: fixed;
   width: 620px;
   height: 430px;
   background-color: #fff;
