@@ -225,7 +225,7 @@
       </div>
     </section>
     <section>
-      <div class="container container-flex">
+      <div class="about container-flex">
         <div class="about-us">
           <h4 class="about-us-label">КОМПАНИЯ «Техномарт»</h4>
           <p class="paragraph-one">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
@@ -241,10 +241,9 @@
           <h4 class="contacts-label">Контакты</h4>
           <p class="paragraph-three">Вы можете забрать товар сами, <br>заехав в наш офис:</p>
           <img class="map" src="img/map.png" width: "300px" height: "158px" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
-          <a class="write-us-link" href="#">Заблудились? Напишите нам!</a>
+          <button class="write-us-button" type="button" name="modal-open-button">Заблудились? Напишите нам!</button>
         </div>
       </div>
-
     </section>
   </main>
 
@@ -313,29 +312,54 @@
   </footer>
 
   <div class="modal-contacts-popup">
-    <button class="modal-close" type="button" name="button"></button>
-    <form class="write-us" action="https://echo.htmlacademy.ru" method="post">
-      <div class="first-line">
-        <label class="name" for="your-name">Ваше имя:</label>
-        <input class="modal-name" id="your-name" type="text" name="name" placeholder="Имя фамилия">
+    <div class="write-us-container">
+      <form class="modal-form" action="index.html" method="post">
+        <div class="first-line">
+          <p class="first-field">
+            <label class="name" for="your-name">Ваше имя:</label>
+            <input class="modal-name" id="your-name" type="text" name="name" placeholder="Имя фамилия">
+          </p>
+          <p class="second-field">
+            <label class="email" for="your-email">Ваш e-mail:</label>
+            <input class="modal-email" id="your-email" type="email" name="email" placeholder="email@example.ru">
+          </p>
+        </div>
+        <p class="letter">
+          <label class="text" for="text-form">Текст письма:</label>
+          <input class="modal-text" id="text-form" type="text" name="next" placeholder="В свободной форме">
+        </p>
+        <div class="button-container">
+          <button class="popup-button" type="submit">Отправить</button>
+        </div>
+      </form>
+      <button class="modal-close" type="button" name="button"></button>
       </div>
-      <div class="second-line">
-        <label class="email" for="your-email">Ваш e-mail:</label>
-        <input class="modal-email" id="your-email" type="email" name="email" placeholder="email@example.ru">
-      </div>
-      <div class="third-line">
-        <label class="text" for="text-form">Текст письма:</label>
-        <input class="modal-text" id="text-form" type="text" name="next" placeholder="В свободной форме">
-      </div>
-      <div class="fourth-line">
-        <button class="popup-button" type="submit">Отправить</button>
-      </div>
-    </form>
-  </div>
+    </div>
   <div class="map-popup">
-    <img class="big-map" src="img/big-map.png" width="940px" height="447px" alt="Большая Конюшенная улица 19">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426" width="940px" height="447px" allowfullscreen></iframe>
+    <p>
+      <img class="big-map" src="img/big-map.png" width="940px" height="447px" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+    </p>
     <button class="map-close" type="button" name="button"></button>
   </div>
+
+  <!-- <script>
+    var button = document.querySelector(".write-us-button");
+    var popup = document.querySelector(".modal-contacts-popup");
+    var close = popup.querySelector(".modal-close");
+    var name = popup.querySelector("#your-name");
+
+    button.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    popup.classList.add("modal-show");
+    name.focus()
+  });
+
+    close.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    popup.classList.remove("modal-show");
+  });
+  </script> -->
 
 </body>
 
