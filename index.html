@@ -240,7 +240,9 @@
         <div class="contacts">
           <h4 class="contacts-label">Контакты</h4>
           <p class="paragraph-three">Вы можете забрать товар сами, <br>заехав в наш офис:</p>
-          <img class="map" src="img/map.png" width: "300px" height: "158px" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+          <a class="map-link" href="#">
+            <img class="map" src="img/map.png" width: "300px" height: "158px" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+          </a>
           <button class="write-us-button" type="button" name="modal-open-button">Заблудились? Напишите нам!</button>
         </div>
       </div>
@@ -313,7 +315,7 @@
 
   <div class="modal-contacts-popup">
     <div class="write-us-container">
-      <form class="modal-form" action="index.html" method="post">
+      <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
         <div class="first-line">
           <p class="first-field">
             <label class="name" for="your-name">Ваше имя:</label>
@@ -340,27 +342,31 @@
     <p>
       <img class="big-map" src="img/big-map.png" width="940px" height="447px" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
     </p>
-    <button class="map-close" type="button" name="button"></button>
+    <button class="map-close" type="submit" name="button"></button>
   </div>
 
-  <!-- <script>
+  <script type="text/javascript">
     var button = document.querySelector(".write-us-button");
     var popup = document.querySelector(".modal-contacts-popup");
     var close = popup.querySelector(".modal-close");
-    var name = popup.querySelector("#your-name");
+    var map = document.querySelector(".map-link");
+    var mappopup = document.querySelector(".map-popup");
+    var mapclose = popup.querySelector(".map-close");
+    var form = popup.querySelector(".modal-form");
+    var name = popup.querySelector(".your-name");
 
-    button.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    popup.classList.add("modal-show");
-    name.focus()
-  });
+    button.addEventListener("click", function(evt) {
+      evt.preventDefault();
+      popup.classList.add("modal-show");
+      name.focus();
+    });
 
-    close.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    popup.classList.remove("modal-show");
-  });
-  </script> -->
+    close.addEventListener("click", function(evt) {
+      evt.preventDefault();
+      popup.classList.remove("modal-show");
+    });
 
+  </script>
 </body>
 
 </html>
