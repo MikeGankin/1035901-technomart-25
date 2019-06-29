@@ -240,8 +240,8 @@
         <div class="contacts">
           <h4 class="contacts-label">Контакты</h4>
           <p class="paragraph-three">Вы можете забрать товар сами, <br>заехав в наш офис:</p>
-          <a class="map-link" href="#">
-            <img class="map" src="img/map.png" width: "300px" height: "158px" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+          <a class="map-link" href="https://www.google.ru/maps/place/Большая+Конюшенная+ул.,+19,+Санкт-Петербург,+191186/@59.9387956,30.3219225,17z/data=!3m1!4b1!4m5!3m4!1s0x4696310fca5ba729:0xea9c53d4493c879f!8m2!3d59.9387942!4d30.3230833">
+            <img class="map" src="img/map.png" width:="300px" height:="158px" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
           </a>
           <button class="write-us-button" type="button" name="modal-open-button">Заблудились? Напишите нам!</button>
         </div>
@@ -338,22 +338,40 @@
       </div>
     </div>
   <div class="map-popup">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426" width="940px" height="447px" allowfullscreen></iframe>
-    <p>
-      <img class="big-map" src="img/big-map.png" width="940px" height="447px" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
-    </p>
-    <button class="map-close" type="submit" name="button"></button>
+    <div class="map-wrapper" id="map_canvas" ></div>
+    <button class="map-close" type="button" name="button"></button>
   </div>
+
+
+  <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+  <script type="text/javascript">
+  function initialize() {
+    var myLatlng = new google.maps.LatLng(59.9388154, 30.32348639999998);
+    var myOptions = {
+      zoom: 17,
+      center: myLatlng,
+      mapTypeId: google.maps.MapTypeId.ROADMAP,
+    }
+    var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+  }
+    var marker = new google.maps.Marker({
+      position: myLatlng,
+      map: map,
+      title: "Hello World!"
+  });
+  </script>
 
   <script type="text/javascript">
     var button = document.querySelector(".write-us-button");
     var popup = document.querySelector(".modal-contacts-popup");
     var close = popup.querySelector(".modal-close");
-    var map = document.querySelector(".map-link");
+    var link = document.querySelector(".map-link");
     var mappopup = document.querySelector(".map-popup");
-    var mapclose = popup.querySelector(".map-close");
-    var form = popup.querySelector(".modal-form");
-    var name = popup.querySelector(".your-name");
+    var mapclose = document.querySelector(".map-close");
+    var priceButton = document.querySelector(".price-link");
+    var chartpopup = document.querySelector(".modal-shoping-chart-popup");
+    var name = popup.querySelector("[name=name]");
+    var email = popup.querySelector("[name=email]");
 
     button.addEventListener("click", function(evt) {
       evt.preventDefault();
@@ -366,7 +384,23 @@
       popup.classList.remove("modal-show");
     });
 
+    link.addEventListener("click", function(evt) {
+      evt.preventDefault();
+      mappopup.classList.add("modal-show");
+   });
+
+    mapclose.addEventListener("click", function(evt) {
+      evt.preventDefault();
+      mappopup.classList.remove("modal-show");
+   });
+
+    priceButton.addEventListener("click", function(evt) {
+      evt.preventDefault();
+      chartpopup.classList.add("modal-show");
+   });
+
   </script>
+
 </body>
 
 </html>
