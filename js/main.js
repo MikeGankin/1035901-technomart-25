@@ -1,14 +1,9 @@
 var myMap;
-// Дождёмся загрузки API и готовности DOM.
 ymaps.ready(init);
 
 function init() {
-  // Создание экземпляра карты и его привязка к контейнеру с
-  // заданным id ("map").
   myMap = new ymaps.Map('map_canvas', {
-    // При инициализации карты обязательно нужно указать
-    // её центр и коэффициент масштабирования.
-    center: [59.93863106417265, 30.3230545], // Москва
+    center: [59.93863106417265, 30.3230545],
     zoom: 17,
     controls: ['zoomControl'],
   }, {
@@ -21,8 +16,8 @@ function init() {
     }, {
       preset: 'islands#dotIconWithCaption',
       iconCaptionMaxWidth: '200'
-    }))
-
+    }));
+}
   var button = document.querySelector(".write-us-button");
   var popup = document.querySelector(".modal-contacts-popup");
   var close = popup.querySelector(".modal-close");
@@ -33,15 +28,14 @@ function init() {
   var emailInput = popup.querySelector("[name=email]");
   var form = popup.querySelector(".modal-form");
   var submit = popup.querySelector(".popup-button");
-
   var isStorageSupport = true;
   var storage = "";
 
   try {
-    storage = localStorage.getItem("login");
+    storage = localStorage.getItem("nameInput");
   } catch (err) {
     isStorageSupport = false;
-  });
+  }
 
 button.addEventListener("click", function(evt) {
   evt.preventDefault();
