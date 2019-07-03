@@ -1779,7 +1779,7 @@ img {
   padding-top: 0px;
   padding-right: 0px;
   padding-bottom: 0px;
-  padding-left: 16px;;
+  padding-left: 18px;;
 }
 
 .my-orders {
@@ -2056,20 +2056,21 @@ img {
 
 .sort {
   width: 700px;
-  margin-bottom: 22px;
+  margin-bottom: 20px;
   background-color: #f7f3ec;
 }
 
 .sort-label {
   margin: 0;
   padding-top: 10px;
-  padding-right: 139px;
+  padding-right: 129px;
   padding-bottom: 11px;
   padding-left: 19px;
+  font-family: 'PT Sans', 'Arial', sans-serif;
   text-transform: uppercase;
   color: #000000;
   font-size: 14px;
-  font-weight: normal;
+  line-height: 1.25;
 }
 
 .sort-parametres-list {
@@ -2078,19 +2079,20 @@ img {
   font-size: 14px;
   line-height: 1.25;
   list-style: none;
+  font-family: 'PT Sans', 'Arial', sans-serif;
 }
 
 .sort-parametres-item-price {
-  padding-right: 78px;
+  padding-right: 66px;
 }
 
 
 .sort-parametres-item-type {
-  padding-right: 71px;
+  padding-right: 61px;
 }
 
 .sort-parametres-item-function {
- padding-right: 59px;
+ padding-right: 38px;
 }
 
 .sort-parametres-item-up {
@@ -2106,6 +2108,7 @@ img {
   padding: 0;
   color: rgba(0, 0, 0, 0.3);
   border-bottom: 1px solid transparent;
+  font-family: 'PT Sans', 'Arial', sans-serif;
 }
 
 .sort-parametres-item-price a {

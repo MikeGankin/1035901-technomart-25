@@ -9,6 +9,7 @@ function init() {
   }, {
     searchControlProvider: 'yandex#search'
   });
+
   myMap.geoObjects
     .add(new ymaps.Placemark([59.93863106417265, 30.3230545], {
       balloonContent: 'цвет <strong>голубой</strong>',
@@ -18,24 +19,28 @@ function init() {
       iconCaptionMaxWidth: '200'
     }));
 }
-  var button = document.querySelector(".write-us-button");
-  var popup = document.querySelector(".modal-contacts-popup");
-  var close = popup.querySelector(".modal-close");
-  var link = document.querySelector(".map-link");
-  var mappopup = document.querySelector(".map-popup");
-  var mapclose = document.querySelector(".map-close");
-  var nameInput = popup.querySelector("[name=name]");
-  var emailInput = popup.querySelector("[name=email]");
-  var form = popup.querySelector(".modal-form");
-  var submit = popup.querySelector(".popup-button");
-  var isStorageSupport = true;
-  var storage = "";
 
-  try {
-    storage = localStorage.getItem("nameInput");
-  } catch (err) {
-    isStorageSupport = false;
-  }
+var button = document.querySelector(".write-us-button");
+var popup = document.querySelector(".modal-contacts-popup");
+var close = document.querySelector(".modal-close");
+var link = document.querySelector(".map-link");
+var mappopup = document.querySelector(".map-popup");
+var mapclose = document.querySelector(".map-close");
+var nameInput = popup.querySelector("[name=name]");
+var emailInput = popup.querySelector("[name=email]");
+var form = popup.querySelector(".modal-form");
+var submit = popup.querySelector(".popup-button");
+var isStorageSupport = true;
+var storage = "";
+var priceButton = document.querySelector(".price-link");
+// var chartPopup = document.querySelector(".modal-shoping-chart-popup");
+// var continueButton = chartpopup.querySelector(".continue-button");
+
+try {
+  storage = localStorage.getItem("nameInput");
+} catch (err) {
+  isStorageSupport = false;
+}
 
 button.addEventListener("click", function(evt) {
   evt.preventDefault();
@@ -87,3 +92,18 @@ window.addEventListener("keydown", function(evt) {
     }
   }
 });
+
+// priceButton.addEventListener("click", function(evt) {
+//   evt.preventDefault();
+//   chartpopup.classList.add("modal-show");
+// });
+//
+// close.addEventListener("click", function(evt) {
+//   evt.preventDefault();
+//   chartpopup.classList.remove("modal-show");
+// });
+//
+// continueButton.addEventListener("click", function(evt) {
+//   evt.preventDefault();
+//   chartpopup.classList.remove("modal-show");
+// });

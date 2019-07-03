@@ -7,7 +7,7 @@
   <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i&display=swap&subset=cyrillic" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap&subset=cyrillic" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -199,7 +199,7 @@
               <h3 class="title">Перфоратор <span class="good-label-style">Bosch</span> <br> BFG 6000</h3>
             </a>
             <p class="discount">30 500 Р.</p>
-            <p class="price"><a class="price-link" href="#">12500 Р.</a></p>
+            <p class="price"><a class="price-link" href="#">22500 Р.</a></p>
           </li>
           <li class="catalog-item card catalog-new">
             <div class="actions">
@@ -378,28 +378,7 @@
     </div>
   </div>
 
- <script>
-   var priceButton = document.querySelector(".price-link");
-   var chartpopup = document.querySelector(".modal-shoping-chart-popup");
-   var close = chartpopup.querySelector(".modal-close");
-   var continueButton =  chartpopup.querySelector(".continue-button");
-
-   priceButton.addEventListener("click", function(evt) {
-     evt.preventDefault();
-     chartpopup.classList.add("modal-show");
-   });
-
-  close.addEventListener("click", function(evt) {
-    evt.preventDefault();
-    chartpopup.classList.remove("modal-show");
-  });
-
-  continueButton.addEventListener("click", function(evt) {
-    evt.preventDefault();
-    chartpopup.classList.remove("modal-show");
-  });
-
- </script>
+  <script src="js/main.js"></script>
 
 </body>
 
