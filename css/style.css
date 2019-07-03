@@ -1,5 +1,5 @@
 body {
-  background-color: #fff;
+  background-color: #ffffff;
   font-family: 'Cuprum', 'Arial', sans-serif;
 }
 
@@ -1425,6 +1425,7 @@ img {
   top: 50%;
   left: 50%;
   margin-left: -320px;
+  margin-top: -234px;
   background-color: #ffffff;
   background-image: url("../img/popup-line.svg");
   background-repeat: no-repeat;
