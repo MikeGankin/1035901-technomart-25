@@ -2342,6 +2342,10 @@ img {
   background-repeat: no-repeat;
 }
 
+.checkbox:disabled+.checkbox-label {
+  opacity: 0.3;
+}
+
 .radio-label::before {
   position: absolute;
   top: -4px;
