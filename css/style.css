@@ -150,6 +150,7 @@ img {
   color: #ffffff;
   font-size: 17px;
   line-height: 1.06;
+  vertical-align: middle;
 }
 
 .bookmarks,
@@ -271,6 +272,7 @@ img {
   font-size: 21px;
   font-style: normal;
   line-height: 1;
+  vertical-align: middle;
 }
 
 .phone::before {
@@ -330,6 +332,7 @@ img {
   background-color: #ffffff;
   font-size: 21px;
   line-height: 1;
+  vertical-align: middle;
 }
 
 .login-link:hover .login-icon {
@@ -349,6 +352,7 @@ img {
   color: #000000;
   background-color: #ffffff;
   font-size: 21px;
+  vertical-align: middle;
 }
 
 .user-navigation a:hover {
@@ -380,6 +384,7 @@ img {
   color: #ffffff;
   font-size: 17px;
   line-height: 1;
+  vertical-align: middle;
 }
 
 .site-navigation-first-item a {
@@ -601,6 +606,7 @@ img {
   border-radius: 3px;
   background-color: #ee3643;
   font-size: 14px;
+  vertical-align: middle;
 }
 
 .catalog-item-galery a:hover {
@@ -644,6 +650,7 @@ img {
   background-color: rgba(0, 0, 0, 0.1);
   font-size: 14px;
   line-height: 1.25;
+  vertical-align: middle;
 }
 
 .popular-items,
@@ -686,6 +693,7 @@ img {
   border-radius: 3px;
   background-color: #ee3643;
   font-size: 14px;
+  vertical-align: middle;
 }
 
 .popular a:hover {
@@ -714,6 +722,7 @@ img {
   text-align: center;
   border: 1px solid #ccc;
   line-height: 20px;
+  vertical-align: middle;
 }
 
 .new {
@@ -816,6 +825,7 @@ img {
   text-align: center;
   color: #ffffff;
   border-radius: 3px;
+  vertical-align: middle;
 }
 
 .price-link::after {
@@ -908,6 +918,15 @@ img {
   height: 143px;
 }
 
+.popular-producers-items a:hover {
+  box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
+}
+
+.popular-producers-items a:active {
+  box-shadow: 0px 4px 10px 0 rgba(41, 52, 73, 0.5);
+  opacity: 0.3;
+}
+
 .servises-container {
   margin-bottom: 78px;
   background-color: #f4f8fa;
@@ -992,7 +1011,6 @@ img {
 
 .delivery p {
   width: 278px;
-  height: 96px;
   margin: 0;
   color: #000000;
   font-family: 'PT Sans', 'Arial', sans-serif;
@@ -1012,6 +1030,7 @@ img {
   box-shadow: 0 1px 0 0 #ffffff, inset 0 1px 0 0 #ffffff;
   font-size: 20px;
   font-weight: bold;
+  vertical-align: middle;
 }
 
 .servises-warranty a {
@@ -1026,6 +1045,7 @@ img {
   box-shadow: 0 1px 0 0 #293449, inset 0 1px 0 0 #405069;
   font-size: 20px;
   font-weight: bold;
+  vertical-align: middle;
 }
 
 .servises-credit a {
@@ -1040,6 +1060,7 @@ img {
   box-shadow: 0 1px 0 0 #293449, inset 0 1px 0 0 #405069;
   font-size: 20px;
   font-weight: bold;
+  vertical-align: middle;
 }
 
 .servises-delivery a:hover,
@@ -1109,7 +1130,8 @@ img {
 }
 
 .paragraph-three {
-  margin: 0;
+  margin-bottom: 53px;
+  margin-top: 0;
   padding-top: 0;
 }
 
@@ -1179,6 +1201,7 @@ img {
   border-radius: 3px;
   background-color: #ee3643;
   font-size: 14px;
+  vertical-align: middle;
 }
 
 .write-us-button {
@@ -1186,7 +1209,8 @@ img {
   margin: 0;
   padding-top: 11px;
   padding-bottom: 9px;
-  padding-right: 3px;
+  padding-right: 60px;
+  padding-left: 60px;
   text-transform: uppercase;
   color: #ffffff;
   border-radius: 3px;
@@ -1203,11 +1227,6 @@ img {
 .write-us-button:active {
   border: 1px solid #ba2732;
   background-color: #ba2732;
-}
-
-.map {
-  margin-top: 31px;
-  margin-bottom: 35px;
 }
 
 .logo-container {
@@ -1235,7 +1254,10 @@ img {
 }
 
 .footer-navigation-list {
-  margin: 37px 0 33px;
+  margin-top: 37px;
+  margin-right: 0px;
+  margin-bottom: 33px;
+  margin-left: 0px;
   list-style: none;
   padding: 0;
 }
@@ -1294,6 +1316,7 @@ img {
   padding-bottom: 0;
   padding-top: 4px;
   margin: 0;
+  vertical-align: middle;
 }
 
 .footer-navigation-item a {
@@ -1302,6 +1325,7 @@ img {
   padding-bottom: 0;
   padding-top: 1px;
   margin: 0;
+  vertical-align: middle;
 }
 
 .footer-category-item a:hover {
@@ -1384,6 +1408,7 @@ img {
   padding-right: 3px;
   color: #ffffff;
   display: inline-block;
+  vertical-align: middle;
 }
 
 .site-information {
@@ -1648,6 +1673,11 @@ img {
   display: inline-block;
   box-sizing: border-box;
   width: 300px;
+  height: 158px;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 52px;
+  vertical-align: middle;
 }
 
 .big-map {
@@ -1727,6 +1757,7 @@ img {
   font-size: 21px;
   line-height: 1;
   background-color: #ffffff;
+  vertical-align: middle;
 }
 
 .user-link:active,
@@ -1808,6 +1839,7 @@ img {
   color: #32425c;
   background-color: transparent;
   font-size: 16px;
+  vertical-align: middle;
 }
 
 .cabinet-menu-item a:hover,
@@ -1841,6 +1873,7 @@ img {
   color: #000;
   font-size: 14px;
   line-height: 1.25;
+  vertical-align: middle;
 }
 
 .catalog-link {
@@ -2110,6 +2143,7 @@ img {
   color: rgba(0, 0, 0, 0.3);
   border-bottom: 1px solid transparent;
   font-family: 'PT Sans', 'Arial', sans-serif;
+  vertical-align: middle;
 }
 
 .sort-parametres-item-price a {
@@ -2171,6 +2205,7 @@ img {
   background-color: #ee3643;
   font-size: 14px;
   font-family: 'PT Sans', 'Arial', sans-serif;
+  vertical-align: middle;
 }
 
 .pagination-item a {
@@ -2185,6 +2220,7 @@ img {
   background-color: #ffffff;
   font-size: 14px;
   font-family: 'PT Sans', 'Arial', sans-serif;
+  vertical-align: middle;
 }
 
 .next-button a {
@@ -2201,6 +2237,7 @@ img {
   background-color: #ffffff;
   font-size: 14px;
   font-family: 'PT Sans', 'Arial', sans-serif;
+  vertical-align: middle;
 }
 
 .pagination-link:hover,
@@ -2226,6 +2263,7 @@ img {
   padding-left: 20px;
   padding-right: 20px;
   background-color: #f7f3ec;
+  vertical-align: middle;
 }
 
 .slider {
@@ -2251,6 +2289,7 @@ img {
   background-color: #f7f3ec;
   font-size: 17px;
   color: #000000;
+  vertical-align: middle;
 }
 
 .show-button {
@@ -2267,6 +2306,7 @@ img {
   text-align: center;
   color: #000000;
   text-transform: uppercase;
+  vertical-align: middle;
 }
 
 .produsers-selection-item,
@@ -2294,6 +2334,7 @@ img {
   content: "";
   background-image: url("../img/checkbox-off.svg");
   background-repeat: no-repeat;
+  vertical-align: middle;
 }
 
 .checkbox:checked+.checkbox-label::before {
@@ -2312,6 +2353,7 @@ img {
   content: "";
   background-image: url("../img/radio-off.svg");
   background-repeat: no-repeat;
+  vertical-align: middle;
 }
 
 .radio:checked+.radio-label::before {
@@ -2388,6 +2430,7 @@ img {
   border-radius: 3px;
   background-color: #ee3643;
   font-size: 14px;
+  vertical-align: middle;
 }
 
 .continue-button {
