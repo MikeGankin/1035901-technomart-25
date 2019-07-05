@@ -81,7 +81,7 @@ img {
   background-color: #ba2732;
 }
 
-.search-form p {
+.search-form {
   position: relative;
   margin: 0;
   padding: 0;
@@ -773,8 +773,11 @@ img {
 }
 
 .catalog-item .title {
+  width: 164px;
   margin-top: 3px;
   margin-bottom: 12px;
+  margin-left: auto;
+  margin-right: auto;
   padding: 0;
   text-align: center;
   color: #000000;
@@ -1079,8 +1082,7 @@ img {
 
 .about-us,
 .contacts {
-  height: 438px;
-  margin-bottom: 21px;
+  margin-bottom: 87px;
 }
 
 .about-us {
@@ -1130,7 +1132,8 @@ img {
 }
 
 .paragraph-three {
-  margin-bottom: 53px;
+  width: 178px;
+  margin-bottom: 29px;
   margin-top: 0;
   padding-top: 0;
 }
@@ -1342,7 +1345,6 @@ img {
 .social-list {
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 
 .copyright {
@@ -1351,20 +1353,19 @@ img {
   font-size: 16px;
 }
 
-.copyright p {
+.creation-date {
   margin-top: 36px;
-  margin-bottom: 34px;
-  padding: 0;
+  width: 248px;
+  margin-right: 144px;
 }
 
 .social-list {
   width: 132px;
-  margin-right: 118px;
-  margin-left: 164px;
   padding: 0;
   list-style: none;
   margin-top: 34px;
   margin-bottom: 31px;
+  margin-right: 116px;
 }
 
 .social-list li {
@@ -1388,13 +1389,13 @@ img {
 .vk-logo {
   position: absolute;
   top: 13px;
-  left: 8px;
+  left: 6px;
 }
 
 .fb-logo {
   position: absolute;
   top: 9px;
-  left: 15px;
+  left: 16px;
 }
 
 .inst-logo {
@@ -1419,14 +1420,14 @@ img {
   padding: 0;
 }
 
-.site-information p {
-  color: #ffffff;
-  font-size: 16px;
-  font-stretch: normal;
+.feedback {
+  margin-right: 54px;
+  width: 135px;
 }
 
-.feedback {
-  margin-right: 53px;
+.create-by {
+  margin-right: 10px;
+  width: 96px;
 }
 
 .site-information a {
@@ -1676,7 +1677,7 @@ img {
   height: 158px;
   padding: 0;
   margin-top: 0;
-  margin-bottom: 52px;
+  margin-bottom: 51px;
   vertical-align: middle;
 }
 
@@ -1758,6 +1759,7 @@ img {
   line-height: 1;
   background-color: #ffffff;
   vertical-align: middle;
+  padding-bottom: 8px;
 }
 
 .user-link:active,
@@ -2363,6 +2365,10 @@ img {
 .radio:checked+.radio-label::before {
   background-image: url("../img/radio-on.svg");
   background-repeat: no-repeat;
+}
+
+.radio:disabled+.radio-label {
+  opacity: 0.3;
 }
 
 .about-drill {
