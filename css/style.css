@@ -369,7 +369,6 @@ img {
 }
 
 .site-navigation-list {
-  height: 60px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -522,10 +521,9 @@ img {
   position: relative;
   box-sizing: border-box;
   width: 300px;
-  height: 123px;
   padding-top: 17px;
   padding-right: 43px;
-  padding-bottom: 12px;
+  padding-bottom: 21px;
   padding-left: 22px;
 }
 
@@ -665,8 +663,9 @@ img {
 
 .popular {
   width: 940px;
-  height: 89px;
   margin-bottom: 21px;
+  padding-top: 26px;
+  padding-bottom: 26px;
   background-color: #f9f5f0;
 }
 
@@ -775,7 +774,7 @@ img {
 .catalog-item .title {
   width: 164px;
   margin-top: 3px;
-  margin-bottom: 12px;
+  margin-bottom: 11px;
   margin-left: auto;
   margin-right: auto;
   padding: 0;
@@ -801,10 +800,9 @@ img {
 
 .catalog-item .price {
   width: 141px;
-  height: 38px;
   margin-top: 6px;
   margin-right: auto;
-  margin-bottom: 21px;
+  margin-bottom: 20px;
   margin-left: auto;
 }
 
@@ -931,7 +929,7 @@ img {
 }
 
 .servises-container {
-  margin-bottom: 78px;
+  margin-bottom: 77px;
   background-color: #f4f8fa;
 }
 
@@ -950,7 +948,7 @@ img {
   width: 240px;
   margin-top: 0;
   margin-right: 80px;
-  margin-bottom: 80px;
+  margin-bottom: 97px;
   padding: 0;
   list-style: none;
 }
@@ -966,17 +964,23 @@ img {
 }
 
 .delivery {
-  margin: 0;
+  position: relative;
+}
+
+.delivery::before {
+  content: "";
+  position: absolute;
+  top: 21px;
+  left: 150px;
+  width: 468px;
+  height: 261px;
   background-image: url("../img/truck.png");
-  background-repeat: no-repeat;
-  background-position: 100% 100%;
 }
 
 .delivery,
 .warranty,
 .credit {
   width: 620px;
-  height: 283px;
 }
 
 .warranty,
@@ -1133,7 +1137,7 @@ img {
 
 .paragraph-three {
   width: 178px;
-  margin-bottom: 29px;
+  margin-bottom: 30px;
   margin-top: 0;
   padding-top: 0;
 }
@@ -1212,8 +1216,8 @@ img {
   margin: 0;
   padding-top: 11px;
   padding-bottom: 9px;
-  padding-right: 60px;
-  padding-left: 60px;
+  padding-right: 59px;
+  padding-left: 62px;
   text-transform: uppercase;
   color: #ffffff;
   border-radius: 3px;
@@ -1401,7 +1405,7 @@ img {
 .inst-logo {
   position: absolute;
   top: 10px;
-  left: 11px;
+  left: 13px;
 }
 
 .social-list a {
@@ -1674,10 +1678,9 @@ img {
   display: inline-block;
   box-sizing: border-box;
   width: 300px;
-  height: 158px;
   padding: 0;
   margin-top: 0;
-  margin-bottom: 51px;
+  margin-bottom: 47px;
   vertical-align: middle;
 }
 
@@ -1984,7 +1987,6 @@ img {
 }
 
 .filter h2 {
-  width: 53px;
   margin: 0;
   padding-top: 10px;
   padding-right: 149px;
