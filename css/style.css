@@ -359,8 +359,8 @@ img {
   color: #ee3643;
 }
 
-.login-link a:active,
-.registration a:active {
+.login-link:active,
+.registration:active {
   opacity: 0.3;
 }
 
