@@ -792,7 +792,7 @@ img {
   text-decoration: line-through;
   color: #a9a9a9;
   font-family: 'PT Sans', 'Arial', sans-serif;
-  font-size: 17.5px;
+  font-size: 17px;
   font-weight: bold;
   padding-left: 2px;
   line-height: 1;
@@ -1262,9 +1262,9 @@ img {
 
 .footer-navigation-list {
   margin-top: 37px;
-  margin-right: 0px;
+  margin-right: 0;
   margin-bottom: 33px;
-  margin-left: 0px;
+  margin-left: 0;
   list-style: none;
   padding: 0;
 }
@@ -1813,10 +1813,10 @@ img {
   align-items: center;
   justify-content: flex-start;
   margin: 0;
-  padding-top: 0px;
-  padding-right: 0px;
-  padding-bottom: 0px;
-  padding-left: 18px;;
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-left: 18px;
 }
 
 .my-orders {
@@ -1862,7 +1862,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  margin-top: 0px;
+  margin-top: 0;
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 21px;
@@ -2502,7 +2502,7 @@ img {
 @keyframes fadeInDown {
   0% {
     opacity: 0;
-    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
     transform: translate3d(0, -100%, 0);
   }
 
