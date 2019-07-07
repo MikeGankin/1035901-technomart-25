@@ -2169,7 +2169,7 @@ img {
 .sort-label {
   margin: 0;
   padding-top: 10px;
-  padding-right: 129px;
+  padding-right: 127px;
   padding-bottom: 11px;
   padding-left: 19px;
   font-family: 'PT Sans', 'Arial', sans-serif;
@@ -2177,6 +2177,7 @@ img {
   color: #000000;
   font-size: 14px;
   line-height: 1.25;
+  font-weight: normal;
 }
 
 .sort-parametres-list {
@@ -2191,7 +2192,6 @@ img {
 .sort-parametres-item-price {
   padding-right: 66px;
 }
-
 
 .sort-parametres-item-type {
   padding-right: 61px;
@@ -2209,45 +2209,69 @@ img {
   padding-right: 17px;
 }
 
-.sort-parametres-list a {
+.sort-parametres-item-price a {
   display: inline-block;
   padding: 0;
   color: rgba(0, 0, 0, 0.3);
-  border-bottom: 1px solid transparent;
+  border: 1px solid transparent;
+  font-family: 'PT Sans', 'Arial', sans-serif;
+  vertical-align: middle;
+  color: #ee3643
+}
+
+.sort-parametres-item-type a {
+  display: inline-block;
+  padding: 0;
+  color: rgba(0, 0, 0, 0.3);
+  border: 1px solid transparent;
+  border-bottom: 1px solid #ee3643;
+  border-bottom-style: dotted;
   font-family: 'PT Sans', 'Arial', sans-serif;
   vertical-align: middle;
 }
 
-.sort-parametres-item-price a {
-  color: #ee3643;
+.sort-parametres-item-function a {
+  display: inline-block;
+  padding: 0;
+  color: rgba(0, 0, 0, 0.3);
+  border: 1px solid transparent;
+  border-bottom: 1px solid #ee3643;
+  border-bottom-style: dotted;
+  font-family: 'PT Sans', 'Arial', sans-serif;
+  vertical-align: middle;
+}
+
+.up-link svg {
+  fill: #ee3643;
+}
+
+.down-link svg {
+  fill: #c5c5c5;
 }
 
 .sort-parametres-item-type a:hover,
 .sort-parametres-item-function a:hover {
   color: #000000;
   border-bottom: 1px solid #ee3643;
-  border-bottom-style: dotted;
+  border-bottom-style: inset;
 }
 
 .sort-parametres-item-type a:active,
 .sort-parametres-item-function a:active {
+  border: 1px solid transparent;
   color: #ee3643;
-  border: none;
 }
 
-.sort-parametres-item-up svg,
-.sort-parametres-item-down svg {
-  fill: #c5c5c5;
-}
-
-.sort-parametres-item-up svg:hover,
-.sort-parametres-item-down svg:hover {
+.down-link svg:hover {
   fill: #000000;
 }
 
-.sort-parametres-item-up svg:active,
-.sort-parametres-item-down svg:active {
+.down-link svg:active {
   fill: #ee3643;
+}
+
+.down-link {
+  border: none;
 }
 
 .pagination {
@@ -2393,12 +2417,6 @@ img {
 .radio-label {
   position: relative;
   padding-left: 36px;
-  opacity: 0.78;
-}
-
-.checkbox-label:hover,
-.radio-label:hover {
-  opacity: 1;
 }
 
 .checkbox-label::before {
@@ -2419,6 +2437,7 @@ img {
 .checkbox:checked+.checkbox-label::before {
   background-image: url("../img/checkbox-on.svg");
   background-repeat: no-repeat;
+  opacity: 0.78;
 }
 
 .radio-label::before {
@@ -2433,11 +2452,20 @@ img {
   background-image: url("../img/radio-off.svg");
   background-repeat: no-repeat;
   vertical-align: middle;
+  opacity: 0.78;
 }
 
 .radio:checked+.radio-label::before {
   background-image: url("../img/radio-on.svg");
   background-repeat: no-repeat;
+}
+
+.checkbox-label:hover::before,
+.radio-label:hover::before,
+.checkbox:checked+.checkbox-label:hover::before,
+.radio:checked+.radio-label:hover::before{
+  cursor: pointer;
+  opacity: 1;
 }
 
 .checkbox:disabled+.checkbox-label,
