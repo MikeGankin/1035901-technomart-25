@@ -964,17 +964,11 @@ img {
 }
 
 .delivery {
-  position: relative;
-}
-
-.delivery::before {
-  content: "";
-  position: absolute;
-  top: 21px;
-  left: 150px;
-  width: 468px;
-  height: 261px;
+  min-height: 260px;
   background-image: url("../img/truck.png");
+  background-repeat: no-repeat;
+  background-position-x: 150px;
+  background-position-y: 23px;
 }
 
 .delivery,
@@ -2339,15 +2333,12 @@ img {
   background-image: url("../img/checkbox-off.svg");
   background-repeat: no-repeat;
   vertical-align: middle;
+  opacity: 0.78;
 }
 
 .checkbox:checked+.checkbox-label::before {
   background-image: url("../img/checkbox-on.svg");
   background-repeat: no-repeat;
-}
-
-.checkbox:disabled+.checkbox-label {
-  opacity: 0.3;
 }
 
 .radio-label::before {
